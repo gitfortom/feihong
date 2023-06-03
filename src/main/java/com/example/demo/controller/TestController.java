@@ -38,8 +38,8 @@ public class TestController {
     @RequestMapping("/setList")
     public List<String> setList(){
 
-        redisTemplate.opsForList().leftPush("age","22");
-        List<String> age = redisTemplate.opsForList().range("age", 0, -1);
+        redisTemplate.opsForList().leftPush("userage","22");
+        List<String> age = redisTemplate.opsForList().range("userage", 0, -1);
         return age;
     }
     /*
